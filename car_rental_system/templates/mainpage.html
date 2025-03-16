@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Car Rental System</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Vehicles</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Rent Your Dream Car Today</h2>
+            <p>Experience seamless car rental services with our wide range of vehicles.</p>
+            <a href="#" class="btn">Book Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Vehicles Section -->
+    <section class="featured-vehicles">
+        <div class="container">
+            <h2 class="section-title">Featured Vehicles</h2>
+            <div class="vehicle-grid">
+                <div class="vehicle-card">
+                    <img src="{{ url_for('static', filename='images/car1.png') }}" alt="Car 1">
+                    <h3>Compact Sedan</h3>
+                    <p>$45/day</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="{{ url_for('static', filename='images/car2.png') }}" alt="Car 2">
+                    <h3>SUV Adventure</h3>
+                    <p>$75/day</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+                <div class="vehicle-card">
+                    <img src="{{ url_for('static', filename='images/car3.png') }}" alt="Car 3">
+                    <h3>Luxury Coupe</h3>
+                    <p>$120/day</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Car Rental System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
